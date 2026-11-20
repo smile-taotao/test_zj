@@ -13,6 +13,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: test_zj
     steps:
       - name: Checkout source
         uses: actions/checkout@v5
@@ -21,9 +24,9 @@ jobs:
         with:
           node-version: 20
       - name: Install dependencies
-        run: cd test_zj && npm ci
+        run: npm install
       - name: Build project
-        run: cd test_zj && npm run build
+        run: npm run build
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
