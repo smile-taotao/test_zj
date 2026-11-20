@@ -52,8 +52,8 @@ const Sidebar: React.FC<SidebarProps> = ({
               AI
             </div>
             <div className="min-w-0">
-              <span className="font-bold text-slate-100 tracking-wide text-xs block leading-tight truncate">智能客服系统</span>
-              <span className="text-[10px] text-slate-500 block leading-tight mt-0.5 truncate">多渠道智能协同平台</span>
+              <span className="font-bold text-slate-100 tracking-wide text-xs block leading-tight truncate">智能质检系统</span>
+              <span className="text-[10px] text-slate-500 block leading-tight mt-0.5 truncate">智能语音质检协同平台</span>
             </div>
           </div>
         ) : (
